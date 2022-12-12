@@ -24,7 +24,15 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-	   <title>Mi hoja de vida</title>
+	   <title>Mi hoja de vida</title>		
+	   <PageMap>   
+    		<DataObject type="thumbnail">
+      		<Attribute name="src" value="http://urielcastanedasierra.infinityfreeapp.com/imagenes/foto_hv1.png"/>		
+      		<Attribute name="width" value="100"/>
+      		<Attribute name="height" value="100"/>
+    		</DataObject>
+  	   </PageMap>	
+	   <meta name="description" content="Hoja de vida de Uriel Castañeda Sierra. ingeniero de sistemas, especialista en negocios en Internet y gestión de proyectos de tecnología." />
 	   <meta charset="utf-8">
 	   <link rel="icon" href="imagenes/icono_web1.png" type="image/png" sizes="20x20">
 	   <link rel="stylesheet" type="text/css" href="css/style.css">

@@ -52,64 +52,45 @@
     <!-- Aquí inicia el código que estructura el CUERPO PRINCIPAL este MODULO del sistema -->
 
     <main>    <!-- definimos los contenidos agrupados en la etiqueta <main> -->
-                   
-      <section id="section_perfil"> <!-- definimos secciones de contenidos (LADO IZQUIERDO) -->
-        <article id="article1"><p id="Tit_Articulo">Mi perfil profesional</p>
-          <p>Como profesional en programación de software y
-            diseñador web, poseo los conocimientos habilidades 
-            para desempeñarme en diferentes cargos afines con mi
-            profesión. Entre ellos:</p>    		
-          <ul>
-            <li>Analista de sistemas</li>
-            <li>Desarrollador de software</li>
-            <li>Administrador de bases de datos</li>        	
-          </ul>		
-        </article>              
-        <article id="article2">
-          <p>(aquí presento el texto de mi segundo artículo)</p>
-          <ul>
-            <li>....</li>
-            <li>....</li>
-          </ul>              		
+
+      <section>  <!-- definimos secciones de contenidos (LADO IZQUIERDO) -->
+        <article id="article1">
+          <p>aquí presento el texto de mi primer artículo</p>
         </article>
-      </section>  <!-- Aquí termina la 1a. sección de contenidos (2 artículos) -->
+
+        <article id="article2">
+          <p>aquí presento el texto de mi segundo artículo </p>
+          <ul>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+
+          </ul>
+        </article>
+
+      </section>  <!-- Aquí termina la sección de artículos -->
+
+      <aside>  <!-- definimos el bloque del LADO DERECHO -->
+        <p> Aquí mostramos el menú de redes sociales</p>
+        <p> incluiremos los íconos y links cada red</p>
+
+      </aside> <!-- Aquí terminan los apartados o comentarios -->
         
-      <aside>      <!-- definimos el bloque del LADO DERECHO -->
-        <!-- Aquí mostramos el menú de redes sociales. Se incluyen los íconos y links cada red -->
-        <img src="imagenes/arrow.png" alt="" id="arrow">
-        <p>Más a cerca de mí !</p>
-        <p>consúltame en... </p>          
-        <ul>
-          <li><a href="http://www.facebook.com"> 
-            <img src="imagenes/Facebook_icon.jpg" alt="ícono Facebook" title="mi perfil en Facebook"></a></li>
-
-          <li><a href="http://www.twitter.com"> 
-            <img src="imagenes/Twitter_Icon.jpg" alt="ícono Twitter" title="mi perfil en Twitter"></a></li>
-
-          <li><a href="http://www.instagram.com"> 
-            <img src="imagenes/Instagram_Icon.jpg" alt="ícono instagram" title="mi perfil en instagram"></a></li> 
-                          
-          <li><a href="http://www.youtube.com"> 
-            <img src="imagenes/Youtube_icon.jpg" alt="ícono youtube" title="mi perfil en youtube"></a></li>  
-        </ul>      	
-      </aside> <!-- Aquí terminan los comonentes del sector lateral -->
-
-      <section id="section_mi_proyecto"> <!-- Aquí definimos la segunda sección de contenidos -->
+      <section id="mi_proyecto"> <!-- Aquí definimos la segunda sección de contenidos -->
         <article>
-          <p> Mi proyecto de vida... </p>
+          <p> En este artículo escribimos nuestro Proyecto de vida... </p>
           <table border="1">
             <tr>
               <td>				
-                <img id="ImgMiProyecto1" src="imagenes/miProyecto.jpg" alt="miProyecto.jpg" title="Mi Proyecto">
-                <br>
-              </td>
-              <td><p>Graduarme como profesional en programación de software y desempeñarme
-                  en actividades de investigación y desarrollo tecnológico.</p>
-              </td>
-            </tr>
-          </table>
+                <img id="ImgMiProyecto1"   src="imagenes/miProyecto.jpg" alt="miProyecto.jpg"
+                title="Mi Proyecto" ><br>
+                .... </td><td><p>Graduarme como profesional en
+                  programación de software y desempeñarme
+                  en actividades de investigación y desarrollo
+                  tecnológico.</p></td>
+            </tr></table>
         </article>
-      </section>
+      </section> <!-- Aquí termina la 2a sección de contenidos -->
 
 	  </main>  <!-- Aquí termina la definición del cuerpo principal del módulo funcional -->
 

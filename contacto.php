@@ -16,9 +16,19 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-	   <title>Mi hoja de vida</title>
+  <title>Mi hoja de vida</title>		
+	   <PageMap>   
+    		<DataObject type="thumbnail">
+      		<Attribute name="src" value="http://urielcastanedasierra.infinityfreeapp.com/imagenes/foto_hv1.png"/>		
+      		<Attribute name="width" value="100"/>
+      		<Attribute name="height" value="100"/>
+    		</DataObject>
+  	 </PageMap>	
+	   <meta name="description" content="Hoja de vida de Uriel Castañeda Sierra. ingeniero de sistemas, especialista en negocios en Internet y gestión de proyectos de tecnología." />
 	   <meta charset="utf-8">
-	   <link rel="icon" href="imagenes/icono_web1.png" type="image/png" sizes="20x20">
+     <meta name="keyworks" content="HTML, CSS, JavaScript, web, página, curriculum">
+
+     <link rel="icon" href="imagenes/icono_web1.png" type="image/png" sizes="20x20">
 	   <link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
@@ -35,11 +45,32 @@
     <!-- Módulo funcional:  INDEX  (Home page) -->
     <!-- Aquí inicia el código que estructura el CUERPO PRINCIPAL este MODULO del sistema -->
 
-    <main>    <!-- definimos los contenidos agrupados en la etiqueta <main> -->
+    <main>   <!-- definimos los contenidos agrupados en la etiqueta <main> -->
 
-		<br><br><br><br><h2>Formulario de Contacto</h2><br><br>
+      <section id="section_contacto"> 
+        <br><h2>Formulario de Contacto</h2>
+        <!-- iniciamos definición del formulario con las celdas para ingreso de datos -->
+        <p>Envíanos tus datos de contacto y tu consulta o inquietudes. Pronto nos comunicaremos contigo. Mil gracias por tu consulta.</p> 
 
-	</main>  <!-- Aquí termina la definición del cuerpo principal del módulo funcional -->
+        <form id='formulario_contacto' class='contacto'>
+          <div><label>Tu Nombre:</label>
+              <input type='text' value=''></div>
+          <div><label>Tu Email:</label>
+              <input type='text' value=''></div>
+          <div><label>Asunto:</label>
+              <input type='text' value=''></div>
+          <div><label>Mensaje:</label>
+              <textarea rows='6'></textarea></div>
+          <div><input type='submit' value='Envía Mensaje'></div>
+        </form>
+
+        <figure>
+          <img src="imagenes/construccion_web2.png"  alt="web en construcción..."  title="Estamos construyendo un mejor futuro..." height="150">
+	    </figure>        
+
+      </section>
+
+    </main> <!--   Aquí termina la definición del cuerpo principal del módulo funcional -->
 
 <?php  
     // --- Importamos el componente <footer> definido en el archivo cabecera.php 

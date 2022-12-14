@@ -6,7 +6,7 @@
 ?>
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
 	  <header>
-	    <figure>
+	    <figure id="foto_hv">
 			<img src="imagenes/foto_hv1.png"
 			alt="Foto HV"
 			title="Foto uriel" height="150">

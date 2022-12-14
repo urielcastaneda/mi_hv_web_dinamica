@@ -16,8 +16,16 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-	   <title>Mi hoja de vida</title>
-	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	 
+	<title>Mi hoja de vida</title>		
+	   <PageMap>   
+    		<DataObject type="thumbnail">
+      		<Attribute name="src" value="http://urielcastanedasierra.infinityfreeapp.com/imagenes/foto_hv1.png"/>		
+      		<Attribute name="width" value="100"/>
+      		<Attribute name="height" value="100"/>
+    		</DataObject>
+  	 </PageMap>	
+	   <meta name="description" content="Hoja de vida de Uriel Castañeda Sierra. ingeniero de sistemas, especialista en negocios en Internet y gestión de proyectos de tecnología." />
+	   <meta charset="utf-8">
 	   <link rel="icon" href="imagenes/icono_web1.png" type="image/png" sizes="20x20">
 	   <link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
@@ -49,6 +57,7 @@
 //     es necesario implementar una mejora posterior que controle los posibles errores de conexión
 $LinkBD=Conectarse("localhost" , "root" , "root" , "web_personal_APRENDIZ");	
 
+
 //  -- Ejecutamos el QUERY (consulta) para extraer la información requerida
 $ScriptSQL = "SELECT * FROM estudios"; 
 
@@ -56,7 +65,10 @@ if ($DatosEstudio = mysqli_query($LinkBD, $ScriptSQL )) {
 
 	// -- Iniciamos la publicación de los datos, mostrando la cabecera de la tabla.
 	//    en este caso, un solo renglón con el título  "Estudios Realizados"
-	echo "<table width='700' border='1' class='tabla' align='center'>";
+
+	echo "<section id='section_misestudios'> ";
+	echo "<br>";
+	echo "<table width='650' border='1' class='tabla' align='center'>";
 	echo "<tr><td colspan='3' class='titulotabla'>Estudios Realizados</td></tr>";
 	echo "<tr class='titulotabla'></tr></table>";
 	echo "<br>";
@@ -91,6 +103,7 @@ if ($DatosEstudio = mysqli_query($LinkBD, $ScriptSQL )) {
 		echo "</tr>";
 		echo "</table><br>";	
 		}  // --- aquí finaliza el ciclo while
+	echo "</section>";
     // -- liberar el conjunto de resultados 
     mysqli_free_result($DatosEstudio);
 

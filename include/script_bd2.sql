@@ -10,19 +10,19 @@ DROP TABLE IF EXISTS experiencia;
 
 -- aquí creamos la tabla 
 CREATE TABLE  experiencia (
-    id  			 int PRIMARY KEY NOT NULL AUTO_INCREMENT,
-		nombre_empresa 		varchar (50) NOT NULL,
-		dir_empresa			  varchar (60) NOT NULL,
-    ciudad_empresa    varchar (30) NOT NULL,
-		tel_empresa       varchar (20) NOT NULL,
+    	id  			 int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+		nombre_empresa 		varchar (80) NOT NULL,
+		dir_empresa			  varchar (80) NOT NULL,
+    	ciudad_empresa    varchar (40) NOT NULL,
+		tel_empresa       varchar (45) NOT NULL,
 		fecha_inicial     DATE NOT NULL,
-		fecha_final       DATE NOT NULL,
-    es_trabajo_actual char (1) NOT NULL,
+		fecha_final       DATE,
+    	es_trabajo_actual char (1) NOT NULL,
 		periodos_cantidad int NOT NULL,
 		periodos_nombre   varchar (20) NOT NULL,    
 		jefe_inmediato    varchar (50),
-		nombre_cargo      varchar (50),
-		departamento_empresa  varchar (60),
+		nombre_cargo      varchar (80),
+		departamento_empresa  varchar (80),
 		detalle_actividades	  varchar (1000) )
 ENGINE = InnoDB DEFAULT CHARSET = utf8  COLLATE utf8_spanish_ci;
 

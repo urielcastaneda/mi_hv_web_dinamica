@@ -289,7 +289,7 @@ aside ul a img:hover {
         width: calc(100% - 34px);
         border: 1px solid  rgb(180, 160, 71);
         border-radius: 5px;        
-        background-color: #bbdfe4;  
+        background-color: hsl(103, 100%, 91%);  
         margin: 10px 10px;
         padding: 10px 10px ;
     }
@@ -298,7 +298,7 @@ aside ul a img:hover {
         width: calc(100% - 34px);
         border: 1px solid  rgb(180, 160, 71);
         border-radius: 5px;       
-        background-color: #b2dfc5;  
+        background-color: #c3f8ff;  
         margin: 10px 10px;
         padding: 10px 10px ;
     }
@@ -312,7 +312,7 @@ aside ul a img:hover {
         width: 98%;
         margin: 5px 5px 0px 5px;
         padding: 5px 5px ;
-        background-color: #a3d3d4;  
+        background-color: #b6e8e9;  
     }
     
     .PeriodoTrabajado{
@@ -330,5 +330,5 @@ aside ul a img:hover {
     }
     
     .DescripcionCargo{
-        font-family: cursive;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }

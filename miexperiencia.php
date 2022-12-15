@@ -76,7 +76,7 @@ if ($DatosExperiencia = mysqli_query($LinkBD, $ScriptSQL )) {
     $ContadorItems++;
     // -- validamos si es TRABAJO ACTUAL  para cambiar el contenido del campo fecha final por "Actual"
     if($fila['es_trabajo_actual'] == "S") $FechaFinal = "Actual";
-    else $FechaFinal = 'al ' . $fila['fecha_final'];
+    else $FechaFinal = '  al ' . $fila['fecha_final'];
 
     // -- Identificamos la plantila a utilizar item PAR  o IMPAR
     if($ContadorItems%2==0)  $ClasePlantilla = 'ItemExperiencia1';
@@ -103,7 +103,7 @@ if ($DatosExperiencia = mysqli_query($LinkBD, $ScriptSQL )) {
 
     $ScriptHTML =  $ScriptHTML . "<DIV class='PeriodoTrabajado'>
               <DIV class='TituloLiteral'>Periodo de trabajo:</DIV> " .
-                  $FechaInicial . " - "  . $FechaFinal . "  (" . $PeriodosCantidad . " " . $PeriodosNombre . ")<br>
+                  $FechaInicial . "  "  . $FechaFinal . "  (" . $PeriodosCantidad . " " . $PeriodosNombre . ")<br>
               <DIV class='TituloLiteral'>Jefe Inmediato: </DIV>" .
                   $JefeInmediato . " </DIV>";
 
@@ -114,7 +114,7 @@ if ($DatosExperiencia = mysqli_query($LinkBD, $ScriptSQL )) {
               <p>$DetalleActividades</p>						
            </DIV>";
 
-    $ScriptHTML =  $ScriptHTML . "</article><br>";
+    $ScriptHTML =  $ScriptHTML . "</article>";
 
     // finalizamos el script que configura la publicación de un bloque de datos (registro).
     // publicamos el Script con la plantilla del registro Renderizada.
